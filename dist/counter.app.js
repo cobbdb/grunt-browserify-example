@@ -10,4 +10,4 @@ module.exports = function () {
     return counter;
 };
 
-},{}]},{},[1]);
+},{}]},{},[1,2]);

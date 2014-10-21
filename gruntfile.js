@@ -4,7 +4,7 @@ module.exports = function (grunt) {
             counter: {
                 files: {
                     'dist/counter.app.js': [
-                        'app.js'
+                        'src/*.js'
                     ]
                 }
             }
