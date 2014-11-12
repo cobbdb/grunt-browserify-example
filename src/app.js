@@ -1,2 +1,8 @@
-count1 = require('./counter.js');
-count2 = require('./counter.js');
+/**
+ * Test to proove that requires only
+ * evaluate once.
+ */
+module.exports = {
+    count1: require('./counter.js'),
+    count2: require('./counter.js')
+};

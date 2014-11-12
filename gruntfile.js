@@ -3,9 +3,12 @@ module.exports = function (grunt) {
         browserify: {
             counter: {
                 files: {
-                    'dist/counter.app.js': [
-                        'src/*.js'
-                    ]
+                    'dist/counter.app.js': 'src/app.js'
+                },
+                options: {
+                    browserifyOptions: {
+                        standalone: 'CounterApp'
+                    }
                 }
             }
         }
