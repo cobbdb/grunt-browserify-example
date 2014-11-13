@@ -3,9 +3,11 @@
  * Test to proove that requires only
  * evaluate once.
  */
-module.exports = {
-    count1: require('./counter.js'),
-    count2: require('./counter.js')
+module.exports = function () {
+    return {
+        count1: require('./counter.js'),
+        count2: require('./counter.js')
+    };
 };
 
 },{"./counter.js":2}],2:[function(require,module,exports){
